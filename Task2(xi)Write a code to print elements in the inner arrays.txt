@@ -1,0 +1,28 @@
+Write a code to print elements in the inner arrays in reverse
+Output: 11 10 9 8 7 6 5 4 3 2 1
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = inner_array.length; j < 0 ;j-- )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+
+My code:
+   In this code the str_all is initialized with 0 is changed to empty variable.
+   The outer for-loop is in Increment orde is changed to decrement order.
+   In the inner for-loop condition is j<0 is changed to j>=0 value greater than or equal to 0.
+   Adding space with the every number, when it's converted to string is missing.
+   
+ANS:
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';  //The above code is initialize with 0 is changed to empty
+for (var i = numsArr.length -1; i >=0 ; i--) //The above code is in increment order
+{
+ var inner_array = numsArr[i];
+ for(var j = inner_array.length-1; j >=0 ;j-- ) //Here in the condition have to be value greater than or equal to 0.
+     str_all +=inner_array[j]+' ';  //Adding space with the string is missing.
+}
+console.log(str_all);
