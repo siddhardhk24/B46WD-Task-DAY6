@@ -1,0 +1,38 @@
+Write a code to add the even numbers and subtract the odd numbers
+Output: 94
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2!=0);
+ {
+ sum += numsArr[i]
+ }
+ else
+ {
+ sum -= numsArr[i]
+ }
+}
+console.log(sum);
+
+My code:
+  1)The semicolon in the if-condition.
+  2)In if-condition the equalto(==) operator have to be used,
+  here they used NOT equalto(!=) operator.
+  
+  ANS:
+  var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2==0)  //here i removed the semicolon
+ {                    //changed(==) instead of (!=).
+ sum += numsArr[i];
+ }
+ else
+ {
+ sum -= numsArr[i];
+ }
+}
+console.log(sum);
+
+Output: 94
