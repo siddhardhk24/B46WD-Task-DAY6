@@ -1,0 +1,28 @@
+2.Find the culprit and invoke the alert
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+scripts.js
+
+alert(“I’m invoked!”);
+
+My code:
+HTML file:
+<!DOCTYPE html>
+<html>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+scripts.js:
+
+var alt=(function fun(){
+    alert("i'm invoked");
+})();
