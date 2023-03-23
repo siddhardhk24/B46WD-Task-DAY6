@@ -1,0 +1,30 @@
+Fix the below to alert sum of two numbers
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+
+My code:
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+script.js
+et a = prompt("First number?");
+let b = prompt("Second number?");
+alert(Number(a) +Number(b));//casting the string to number.
