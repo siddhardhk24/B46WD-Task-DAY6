@@ -1,0 +1,30 @@
+2.https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-them-9ee6c67c44fb
+ Part 1: Find the culprits and nail them — debugging javascript
+1.Find the culprit
+fix.html
+---------------
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( “I’m JavaScript!’);
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+-------------
+
+My code:
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+<body onload="fun()">
+    <script>function fun(){
+        alert( "I'm JavaScript!");
+    }
+        </script> 
+ 
+</body>
+</html>
