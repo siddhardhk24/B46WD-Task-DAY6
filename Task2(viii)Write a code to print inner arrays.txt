@@ -1,0 +1,21 @@
+Write a code to print inner arrays
+Output:
+
+Array(5) [ 1, 2, 3, 4, 5 ]
+Array(6) [ 6, 7, 8, 9, 10, 11 ]
+
+var numsArr = [[1, 2, 3, 4, 5][ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++); {
+ console.log( numsArr[i])
+}
+
+My code:
+  In between the array values ',' is missing.
+  The code is given with semicolon(;) at the end of the for-loop.
+  
+  ANS:
+  var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]]; //Here i added a ','between the array values.
+for (var i = 0; i < numsArr.length; i++) //Here i deleted the semicolon(;) at the end
+{ 
+ console.log( numsArr[i]);
+}
