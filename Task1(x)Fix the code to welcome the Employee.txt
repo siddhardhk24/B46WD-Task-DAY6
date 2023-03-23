@@ -1,0 +1,29 @@
+Fix the code to welcome the Employee
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let login = 'Employee';
+let message = (login == 'Employee') ? :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+My code:
+In the ternary operator we have to give OR(||) operator between the employee and director comaprison.
+script.js
+
+let login = 'Employee';
+let message = (login == 'Employee') ||   //Here i give the OR operator in between the employee and the director
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
