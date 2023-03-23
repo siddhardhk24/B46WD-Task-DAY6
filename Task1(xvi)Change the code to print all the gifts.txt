@@ -1,0 +1,29 @@
+Change the code to print all the gifts
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log('Wrapped ${'gifts[i]'} and added a bow!');
+}
+
+My code:
+  Here i have to print the gifts array. I make only two changes instead of ('') i changed (``)tilt symbol
+  within the console. And with in the console i erased the ('') for gifts.
+  
+Ans:
+script.js
+
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);//('')=>(``)
+  //for gifts[i] i taken the single quotes('').
+}
