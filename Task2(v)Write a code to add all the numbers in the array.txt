@@ -1,0 +1,26 @@
+Write a code to add all the numbers in the array
+
+Output: 66
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ var sum;
+ sum += numsArr[i]
+}
+console.log(sum);
+
+My code:
+   In this code we have to declare the sum outside the for-loop.
+   And initialize the sum with 0. Then in the for-loop numArr[i]
+   has to be type cated as Number.
+   
+Ans:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;//Declare outside the loop and initialize with 0.
+for (var i = 0; i <=10; i++) {
+ 
+ sum += Number(numsArr[i]);//Typecasted as number.
+}
+console.log(sum);
+
+Output: 66
