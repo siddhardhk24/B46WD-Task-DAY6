@@ -1,0 +1,34 @@
+Write a code to replace the array value — If the index is even, replace it with ‘even’.
+
+Output: [ [“even”, 2, “even”, 4, “even”], [6, “even”, 8, “even”, 10, …] ]
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;i++ )
+      if(numsArr[i] %2 == 0 )
+      {
+         numsArr[i] = even
+       }
+}
+console.log(numsArr);
+
+My code:
+  In this above code numsArr[i] have to be change as numsArr[i][j] in the inner for-loop.
+  And the even to be with in the quotes. And in the if-statement j%2 have to be equal with 0.
+  str_all is not needed.
+  
+ANS:
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+      if(j %2 == 0 )  //changed numsArr[i] to j
+      {
+         numsArr[i][j] = 'even'; //numsArr[j] to numsArr[i][j]
+                                 // Even have to be with in the quotes.
+       }
+}
+console.log(numsArr);
