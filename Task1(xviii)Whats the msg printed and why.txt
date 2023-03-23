@@ -1,0 +1,18 @@
+Whats the msg printed and why? Guess you answer before running it.
+
+var lemein = “0”;
+var lemeout = 0;
+var msg = “”;
+if (lemein) {
+ msg += “hi”;
+ }
+if (lemeout) {
+ msg += ‘Hello’;
+}
+console.log(msg);
+
+ANS:
+i)   Here lemein value is a string, so if we check it in the if condition it will be true.
+ii)  Because value 0 is with in the double quotes(""). so it will consider as string.
+iii) In lemeout value is 0, so if we check it in the if condition it will be false.
+iv)  In boolean value of false is 0, so it will not satisfy the if condition.
