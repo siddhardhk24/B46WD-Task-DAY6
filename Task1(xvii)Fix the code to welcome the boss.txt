@@ -1,0 +1,34 @@
+Fix the code to disarm the bomb.
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let countdown = 100;
+while (countdown > 0) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+
+My code:
+ Just change the value 0 to 1 in the while loop. The bomb will be disarmed.
+ 
+ script.js
+
+let countdown = 100;
+while (countdown > 1) {// here i changed the value 0 to 1.
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
