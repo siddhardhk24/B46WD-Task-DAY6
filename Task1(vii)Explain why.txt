@@ -1,0 +1,39 @@
+If you run the below scritpt you will get “Code is Blasted”
+
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+My code:
+In js code the numbers 2 and 12 are treated as strings because it is with in the double quotes("").
+If we take the double quotes and put the numbers as it is. Then it will diffused.
+ANS:
+script.js
+
+var a = 2 > 12; //Here it erased the double quotes, now its diffused.
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
