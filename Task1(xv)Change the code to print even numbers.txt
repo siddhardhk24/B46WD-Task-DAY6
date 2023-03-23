@@ -1,0 +1,27 @@
+Change the code to print even numbers
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 1) {
+  console.log(num)
+}
+
+My code:
+  In this i have to print the even numbers and i m allowed to make only 
+  one change. I changed the updation value in for loop. Thats it.
+  
+script.js
+
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 2) { // here in updation part i changed the value as 2.
+  console.log(num)
+}
