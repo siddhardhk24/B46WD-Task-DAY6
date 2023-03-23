@@ -1,0 +1,39 @@
+Explain the below how it works
+
+explain.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+ANS:
+i)alert('Hello') // this line is not having semicolon
+ANS:
+   In javascript the semicolon is not mandatory. If we end with semicolon, its a proper way to end 
+ if not it's not an error in JS.
+ 
+ii)alert(`Wor
+ ld`)  // this is multiple line code and its working
+ ANS:
+   In javascript the tilt symbol is used to give a sentence in multiple lines. So that would not be 
+ an error in javascript.
+ 
+iii) alert(3 +
+1
++ 2); // this is multiple line code and its working
+ANS:
+   In this the alert is filled with numbers and operators. If any operators missed in between the 
+   numbers then it will be an error. But here for every number the addition operator is placed, so 
+   the multiple lines are not a problem in using numbers.
