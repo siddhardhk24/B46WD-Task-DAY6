@@ -1,0 +1,20 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+Fix the code to reverse.
+
+Code:
+
+(function(str){
+ str1 = str.split(“ “).reverse().join(“”);
+ console.log(str1); 
+})(“abcd”)
+
+
+My code:
+   In the split function delete the space with in quotes.
+
+ANS:
+(function(str){
+   str1 = str.split("").reverse().join("");  //erase spce in the split function.
+   console.log(str1); 
+  })("abcd")
