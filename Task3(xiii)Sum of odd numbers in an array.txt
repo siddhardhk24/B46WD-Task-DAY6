@@ -1,0 +1,35 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+Sum of odd numbers in an array
+
+Code:
+
+
+var as=[12,34,5,6,2,56,6,2,1];
+var s=as.reduce(function(a,c){
+ if(c%2!=0)
+ {
+ return a+c;
+ }
+ return a;});
+console.log(s);
+
+
+My code:
+  I declared a new variable and initialize with 0.
+  If in case If-condition passed the new variable will add the c value.
+  
+ANS:
+
+var as=[12,34,5,6,2,56,6,2,1];
+var k=0;  //I declared a new variable
+var c=0;
+var s=as.reduce(function(a,c){
+ if(c%2!=0)
+ {
+   
+ return k+=c;  //k will sum the c values.
+ 
+ }
+ return a;});
+console.log(s);
