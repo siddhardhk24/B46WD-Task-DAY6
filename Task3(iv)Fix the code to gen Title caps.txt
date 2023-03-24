@@ -1,0 +1,27 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascrip
+
+4)Fix the code to gen Title caps.
+
+Code:
+
+var arr = [“guvi”, “geek”, “zen”, “fullstack”];
+var ano = function(arro) {
+ for (var i = 0; i <= arro.length; i++) {
+ console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
+ }
+}
+ano();
+
+
+My sol:
+  Just we have to send the parameter while calling the function ano().
+  
+  ANS:
+  
+  var arr = ["guvi", "geek", "zen", "fullstack"];
+var ano = function(arro) {
+ for (var i = 0; i <= arro.length; i++) {
+ console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
+ }
+}
+ano(arr);
