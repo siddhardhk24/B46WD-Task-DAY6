@@ -1,0 +1,33 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+11)Fix the code to remove duplicates.
+
+Code:
+
+var res = function(arr){
+ for(var i=0; i < arr.length; i++){
+ newArr = [];
+ if(newArr.indexOf(arr[i]) == -1) {
+ newArr.push(arr[i]);
+ } }
+ console.log(newArr)
+}
+res([“guvi”,”geek”,”guvi”,”duplicate”,”geeK”])
+
+
+My code:
+  In the above code the newArr have to be declared with in the for loop.
+  It have to be declare before for-loop.
+  
+  ANS:
+  
+  var res = function(arr){
+   newArr = [];   //It has to be declare here.
+   for(var i=0; i < arr.length; i++){
+   
+   if(newArr.indexOf(arr[i]) === -1) {
+   newArr.push(arr[i]);
+   } }
+   console.log(newArr);
+  }
+  res(["guvi","geek","guvi","duplicate","geeK"]);
