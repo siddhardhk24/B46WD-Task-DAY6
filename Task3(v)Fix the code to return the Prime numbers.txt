@@ -1,0 +1,39 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+Fix the code to return the Prime numbers
+
+Code:
+
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i===0)
+ {
+ return true;
+ }
+ }
+ return num===1;
+});
+console.log(myPrime);
+
+
+My sol:
+
+ANS:
+
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i==0 && num!=i)   //Here i changed the condition(The number not to be divided by any number
+                                                          in iteration and the number not to be same)
+ {
+   return false;          //Here set it as false based on the condition
+   continue;
+ }
+ else                    //In else part set as true
+ return true;
+ 
+ }
+ //return num===1;
+});
+console.log(myPrime);
