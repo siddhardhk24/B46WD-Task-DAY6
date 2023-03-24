@@ -1,0 +1,19 @@
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+6)Fix the code to sum the number in that array
+
+Code:
+
+const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = (a, b) =>
+ a + b
+const sum = num.reduce(sum)
+console.log(sum);
+
+My code:
+
+const num = [10, 20, 30, 40,50,60,70,80,90,100];
+var sum = (a, b) =>       //here the sum have to be declare as var.
+ a + b;
+ sum = num.reduce(sum);    //don't need to redeclare sum
+console.log(sum);
