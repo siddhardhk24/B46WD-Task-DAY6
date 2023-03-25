@@ -18,7 +18,7 @@ ANS:
 var str_all=''; //Here i declared empty variable instead of 0.
 for (var i = 0; i < numsArr.length; i++) {
  var inner_array = numsArr[i];
- for(var j = 0 ; j < inner_array.length;i++ )
+ for(var j = 0 ; j < inner_array.length;j++ )//In this updation part i have to change as j
      str_all +=inner_array[j]
 }
 console.log(str_all);
