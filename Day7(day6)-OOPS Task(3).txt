@@ -1,0 +1,40 @@
+Write a “person” class to hold all the details.
+
+My code:
+---------------
+class Person{
+    constructor(name,age,desegnition,email,phn,address,pincode){
+        this.name=name;
+        this.age=age;
+        this.desegnition=desegnition;
+        this.email=email;
+        this.phn=phn;
+        this.address=address;
+        this.pincode=pincode;
+    }
+    toString(){
+        return `Details:-
+               Name:${this.name}
+               Age:${this.age}
+               Desgnition:${this.desegnition}
+               E-mail:${this.email}
+               Phone:${this.phn}
+               Address:${this.address}
+               Pincode:${this.pincode}`
+    }
+}
+
+p=new Person("siddhardh",26,"Full-stack Developer","anandhsidhu541@gmail.com",7271747578,"12B, ram nagar, velacherry, Chennai", 600002);
+console.log(p.toString());
+---------------
+
+Output:
+
+Details:-
+               Name:siddhardh
+               Age:26
+               Desgnition:Full-stack Developer
+               E-mail:anandhsidhu541@gmail.com
+               Phone:7271747578
+               Address:12B, ram nagar, velacherry, Chennai
+               Pincode:600002
